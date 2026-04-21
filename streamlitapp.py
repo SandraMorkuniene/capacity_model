@@ -13,7 +13,14 @@ state = get_current_state()
 # Sidebar
 st.sidebar.header("Scenario Controls")
 
-sla = st.sidebar.slider("SLA Target", 0.95, 0.9999, 0.10)
+#sla = st.sidebar.slider("SLA Target", 0.95, 0.9999, 0.10)
+sla = st.sidebar.slider(
+    "SLA Target",
+    min_value=0.95,
+    max_value=0.99999,
+    value=0.99,
+    step=0.0001
+)
 
 load_multiplier = st.sidebar.slider(
     "Traffic Scenario Multiplier",
