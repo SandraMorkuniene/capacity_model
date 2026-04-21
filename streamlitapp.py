@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 
 from simulation import find_optimal
-from data import get_mock_state
+from data import get_current_state
 
 st.set_page_config(layout="wide")
 
 st.title("VPN Capacity Optimization")
 
-state = get_mock_state()
+state = get_current_state()
 
 # Sidebar
 st.sidebar.header("Scenario Controls")
