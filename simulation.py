@@ -1,7 +1,7 @@
 import numpy as np
 
 BASELINE_USERS = 4_300_000
-BASELINE_SERVERS = 9200
+BASELINE_SERVERS = 7000
 BASELINE_UTIL = 0.30
 
 def compute_adjustment(throttling, latency, loss):
