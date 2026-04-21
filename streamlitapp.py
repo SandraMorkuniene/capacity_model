@@ -13,7 +13,7 @@ state = get_current_state()
 # Sidebar
 st.sidebar.header("Scenario Controls")
 
-sla = st.sidebar.slider("SLA Target", 0.95, 0.9999, 0.99)
+sla = st.sidebar.slider("SLA Target", 0.95, 0.9999, 0.10)
 
 load_multiplier = st.sidebar.slider(
     "Traffic Scenario Multiplier",
@@ -22,7 +22,7 @@ load_multiplier = st.sidebar.slider(
 
 cost_per_server = st.sidebar.number_input(
     "Cost per server €/day",
-    1.0, 20.0, 5.0
+    1.0, 30.0, 5.0
 )
 
 st.subheader("Live System State")
